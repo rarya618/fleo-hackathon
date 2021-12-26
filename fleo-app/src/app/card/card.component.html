@@ -1,5 +1,11 @@
+<input type="hidden" #display>
+
 <div class="card-container">
-    <div [ngClass]="'card ' + processProgress(progress(currentSales, targetSales)).color" tabindex=level>
+    <div 
+        [ngClass]="'card ' + processProgress(progress(currentSales, targetSales)).color" 
+        (click)="display.value = id"
+        tabindex=level
+    >
         <p>{{ name }}</p>
         <p>Total Sales- Rs {{ currentSales }}</p>
         <p>Target Sales- Rs {{ targetSales }}</p>
@@ -9,13 +15,17 @@
     </div>
 </div>
 
-<div *ngFor="let child of children" >
-    <app-card
-        [name]=child.name
-        [id]=child.id
-        [level]=child.level
-        [currentSales]=child.currentSales
-        [targetSales]=child.targetSales
-        [children]=child.children
-        ></app-card>            
+<div [ngSwitch]="display.value">
+    <div *ngSwitchCase="id">
+        <div *ngFor="let child of children">
+            <app-card
+                [name]=child.name
+                [id]=child.id
+                [level]=child.level
+                [currentSales]=child.currentSales
+                [targetSales]=child.targetSales
+                [children]=child.children
+            ></app-card>            
+        </div>
+    </div> 
 </div>

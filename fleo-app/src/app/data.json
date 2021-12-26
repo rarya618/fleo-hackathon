@@ -37,6 +37,39 @@
                     "children": []
                 }
             ]
+        },
+        {
+            "name":"Factory B",
+            "id": "factoryB",
+            "level": 1,
+            "currentSales": 600000,
+            "targetSales": 1500000,
+            "children": [
+                {
+                    "name":"Godown A",
+                    "categoryId": "godownA",
+                    "level": 2,
+                    "currentSales": 100000,
+                    "targetSales": 500000,
+                    "children": []
+                },
+                {
+                    "name":"Godown B",
+                    "categoryId": "godownB",
+                    "level": 2,
+                    "currentSales": 400000,
+                    "targetSales": 600000,
+                    "children": []
+                },
+                {
+                    "name":"Godown C",
+                    "categoryId": "godownC",
+                    "level": 2,
+                    "currentSales": 100000,
+                    "targetSales": 400000,
+                    "children": []
+                }
+            ]
         }
     ]
 }
