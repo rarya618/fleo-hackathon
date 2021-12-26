@@ -1,0 +1,22 @@
+{
+    "name":"Tata Steel",
+    "currentSales": 1000000,
+    "targetSales": 3000000,
+    "children": [
+        {
+            "name":"Factory A",
+            "categoryId": "factoryA",
+            "currentSales": 100000,
+            "targetSales": 300000,
+            "children": [
+                {
+                    "name":"Godown A",
+                    "categoryId": "godownA",
+                    "currentSales": 100000,
+                    "targetSales": 300000,
+                    "children": []
+                }
+            ]
+        }
+    ]
+}
