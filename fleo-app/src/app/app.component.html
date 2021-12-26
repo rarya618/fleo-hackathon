@@ -1,1 +1,11 @@
-<app-card></app-card>
+<input type="hidden" #selection>
+
+<app-card
+  [name]=processData().name
+  [id]=processData().id
+  [level]=processData().level
+  [currentSales]=processData().currentSales
+  [targetSales]=processData().targetSales
+  [children]=processData().children
+>
+</app-card>

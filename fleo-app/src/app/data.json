@@ -1,19 +1,39 @@
 {
     "name":"Tata Steel",
+    "id": "tataSteel",
+    "level": 0,
     "currentSales": 1000000,
     "targetSales": 3000000,
     "children": [
         {
             "name":"Factory A",
-            "categoryId": "factoryA",
-            "currentSales": 100000,
-            "targetSales": 300000,
+            "id": "factoryA",
+            "level": 1,
+            "currentSales": 600000,
+            "targetSales": 1500000,
             "children": [
                 {
                     "name":"Godown A",
                     "categoryId": "godownA",
+                    "level": 2,
                     "currentSales": 100000,
-                    "targetSales": 300000,
+                    "targetSales": 500000,
+                    "children": []
+                },
+                {
+                    "name":"Godown B",
+                    "categoryId": "godownB",
+                    "level": 2,
+                    "currentSales": 400000,
+                    "targetSales": 600000,
+                    "children": []
+                },
+                {
+                    "name":"Godown C",
+                    "categoryId": "godownC",
+                    "level": 2,
+                    "currentSales": 100000,
+                    "targetSales": 400000,
                     "children": []
                 }
             ]
